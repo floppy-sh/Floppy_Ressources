@@ -16,6 +16,9 @@ ls /usr/share/nmap/scripts | grep dns | cut -d'.' -f 1 | tr '\n' ',' | sed 's/.$
 
 # start nmap w/ all scripts
 nmap -vvvv --script=<ALL_SCRIPTS> $IP_ADDRESS -p 53
+
+# use nmap with proxychains
+proxychains nmap -Pn -sT <OPTIONS> <IP>
 ```
 
 ### nslookup

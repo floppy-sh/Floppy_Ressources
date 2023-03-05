@@ -39,3 +39,4 @@
 | Name                                                                  | Description                                           |
 | --------------------------------------------------------------------- | ----------------------------------------------------- |
 | [Static-Binary](https://github.com/andrew-d/static-binaries)          | Bunch of statically-linked binaries of various tools. |
+| [Ghostpack-CompiledBinaries](https://github.com/r3motecontrol/Ghostpack-CompiledBinaries)          | Bunch of statically-linked binaries of various tools. |

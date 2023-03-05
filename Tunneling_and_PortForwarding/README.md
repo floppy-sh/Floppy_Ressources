@@ -130,11 +130,22 @@ First you need to get a meterpreter session. Then:
 
 ```bash
 run autoroute -s <TARGET_NETWORK_IP>/24
+
+# simple port forward
 portfwd add -L 127.0.0.1 -l 88 -p 88 -r <TARGET_IP>
+
+# Or create a socks proxy
+use auxiliary/server/socks_proxy
+set srvport <PORT>
+set version 4a
+run
 ```
+
+Then, with modify config of `proxychains` in `/etc/proxychains4.conf` with the port that you set earlier.
 
 ## proxychains
 
 double pivot - proxychains - ToDo
 
 https://theyhack.me/Proxychains-Double-Pivoting/
+https://www.blackhillsinfosec.com/use-nmap-meterpreter/
