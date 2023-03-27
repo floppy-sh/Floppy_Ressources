@@ -1,16 +1,26 @@
 ---
 description: >-
-  This book explains different attack techniques, provides personal
-  exploits/codes and any other pentest methodologies.
+  This book is designed to provide a central repository of techniques,
+  methodologies, and tools used in in several cybersecurity fields.
 ---
 
 # Introduction
 
-## Documentations
+## Categories
 
-## Authors
+* Pentesting Techniques
+* DFIR Techniques
+* OSINT Techniques
 
-This repo has been created by flop.py team 💾 !
+{% hint style="info" %}
+This book has been created by flop.py team 💾 ! We also post some CTF/HTB writeups, homemade tools & misc articles. Checkout the link below !
+{% endhint %}
 
-* [Flop.py Website](https://floppy.sh)
-* [Flop.py Twitter](https://twitter.com/floppy\_sh)
+{% embed url="https://floppy.sh" %}
+
+| Contributor | Description |
+| ----------- | ----------- |
+| Pezzz       | Flop.py     |
+| Steels      | Flop.py     |
+| 0xblank     | Flop.py     |
+

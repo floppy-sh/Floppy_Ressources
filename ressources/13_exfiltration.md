@@ -1,3 +1,0 @@
-# Exfiltration
-
-- [Exfiltration](#exfiltration)
