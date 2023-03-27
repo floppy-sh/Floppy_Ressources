@@ -1,6 +1,6 @@
 ---
 description: >-
-  This book explain differents pentesting attacks technique, provide personnal
+  This book explains different attack techniques, provides personal
   exploits/codes and any other pentest methodologies.
 ---
 
