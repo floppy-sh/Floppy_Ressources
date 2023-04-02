@@ -51,7 +51,16 @@
 
 ## 🕵 DFIR Techniques
 
-* [🚧Todo](dfir-techniques/todo.md)
+* [Image Acquisition](dfir-techniques/image-acquisition.md)
+* [Artifacts analysis](dfir-techniques/artifacts-analysis/README.md)
+  * [Volatility](dfir-techniques/artifacts-analysis/volatility/README.md)
+    * [Profile](dfir-techniques/artifacts-analysis/volatility/profile.md)
+    * [Plugins for Windows](dfir-techniques/artifacts-analysis/volatility/plugins-for-windows.md)
+    * [Plugins for Linux](dfir-techniques/artifacts-analysis/volatility/plugins-for-linux.md)
+    * [Plugins for Mac](dfir-techniques/artifacts-analysis/volatility/plugins-for-mac.md)
+  * [Autopsy](dfir-techniques/artifacts-analysis/autopsy.md)
+  * [Windows Forensic](dfir-techniques/artifacts-analysis/windows-forensic.md)
+  * [MAC OS Forensic](dfir-techniques/artifacts-analysis/mac-os-forensic.md)
 
 ## 🔎 OSINT techniques
 
