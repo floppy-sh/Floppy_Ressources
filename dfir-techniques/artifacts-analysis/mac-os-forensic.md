@@ -33,7 +33,7 @@ chainbreaker tool
 {% endembed %}
 
 ```bash
-python2 chainbreaker.py --key <key> <path_to_login_keychain> -a
+python2 chainbreaker.py --key <key> <path_to_logikeychain> -a
 ```
 
 ## Mount encrypted partition
@@ -65,7 +65,7 @@ python2 vol.py --profile=MacMountainLion_10_8_1_AMDx64 -f memory.dmp mac_filevau
 fvdemount -k <key> -o $((40*512)) encrypted_partition.raw /media/hfs/
 ```
 
-A file named fvde1, corresponding to the HFS+ partition, appears under the mount point Access to (.dbthe data of this partition will be possible after connecting the file fvde1 on a new mount point.
+A file named fvde1, corresponding to the HFS+ partition, appears under the mount point. Access to the data of this partition will be possible after mounting the file fvde1 on a new mount point.
 
 #### 4. Mount the HFS+ partition
 
