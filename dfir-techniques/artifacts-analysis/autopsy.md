@@ -43,7 +43,7 @@ $ docker run \
 ```
 
 {% hint style="info" %}
-&#x20;**** Use the `--nosplash` option on the docker run command line to avoid java error on the launch.
+&#x20;Use the `--nosplash` option on the docker run command line to avoid java error on the launch.
 
 It will create a `case` folder on the current directory. You will need to insert image memory in this folder to exploit them with autopsy.
 {% endhint %}

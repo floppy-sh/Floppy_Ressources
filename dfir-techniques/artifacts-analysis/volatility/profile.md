@@ -54,11 +54,28 @@ If the profile is not available in the list of profiles provided by volatility :
 
 In the case of a Linux profile not directly downloadable, it is possible to create it.
 
+#### What contains What does a Linux volatility profile contain?
+
+It is a zip containing two things, a module.dwarf file and a System.map file.
+
+File `System.map` :
+
+> In Linux, the System.map file is a symbol table used by the kernel.\
+> A symbol table is a look-up between symbol names and their addresses in memory. A symbol name may be the name of a variable or the name of a function. The System.map is required when the address of a symbol name, or the symbol name of an address, is needed. It is especially useful for debugging kernel panics and kernel oopses. The kernel does the address-to-name translation itself when CONFIG\_KALLSYMS is enabled so that tools like ksymoops are not required.\
+> [https://en.wikipedia.org/wiki/System.map](https://en.wikipedia.org/wiki/System.map)
+
+File `module.dwarf` :
+
+> DWARF is a widely used, standardized debugging data format. DWARF was originally designed along with Executable and Linkable Format (ELF), although it is independent of object file formats. The name is a medieval fantasy complement to "ELF" that had no official meaning, although the backronym "Debugging With Arbitrary Record Formats" has since been proposed.\
+> [https://en.wikipedia.org/wiki/DWARF](https://en.wikipedia.org/wiki/DWARF)
+
+#### Profile creation using Docker
+
 1. **Replace the automatic kernel detection** with a static value, which is your target linux kernel, in this case it will be profile for **ubuntu linux 5.4.0-59-generic**
 
 ```bash
-cd volatility/tools/linux/
-sed -i 's/$(shell uname -r)/5.4.0-59-generic/g' Makefilesh
+cd volatility2/tools/linux/
+sed -i 's/$(shell uname -r)/5.4.0-59-generic/g' Makefile
 ```
 
 2. **Run a docker container** that matches the target operating system&#x20;

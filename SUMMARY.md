@@ -10,6 +10,7 @@
 ## 🥷 Pentest Techniques
 
 * [Reconnaissance](pentest-techniques/reconnaissance/README.md)
+  * [Port Scanning](pentest-techniques/reconnaissance/port-scanning.md)
   * [DNS](pentest-techniques/reconnaissance/dns.md)
   * [Local Reconnaissance](pentest-techniques/reconnaissance/local-reconnaissance.md)
 * [Pentesting Web Application](pentest-techniques/pentesting-web-application/README.md)
@@ -24,8 +25,11 @@
     * [SQL Injection](pentest-techniques/pentesting-web-application/injections/sql\_injection.md)
     * [SSTI](pentest-techniques/pentesting-web-application/injections/ssti.md)
   * [PHP Vulnerabilities](pentest-techniques/pentesting-web-application/php-vulnerabilities.md)
+  * [Bypass filters](pentest-techniques/pentesting-web-application/bypass-filters.md)
 * [Pentesting Network Services](pentest-techniques/pentesting-network-services/README.md)
-  * [MS-SQL - Port 1433](pentest-techniques/pentesting-network-services/ms-sql-port-1433.md)
+  * [Pentesting SSH - Port 22](pentest-techniques/pentesting-network-services/pentesting-ssh-port-22.md)
+  * [Pentesting WebDAV - port 80,443](pentest-techniques/pentesting-network-services/pentesting-webdav-port-80-443.md)
+  * [Pentesting  MS-SQL - Port 1433](pentest-techniques/pentesting-network-services/pentesting-ms-sql-port-1433.md)
 * [Pentesting LDAP](pentest-techniques/pentesting-ldap/README.md)
   * [LDAP - Reconnaissance](pentest-techniques/pentesting-ldap/ldap-reconnaissance.md)
   * [LDAP - Lateralization](pentest-techniques/pentesting-ldap/ldap-lateralization.md)
@@ -68,4 +72,4 @@
 
 ## ☠ CVE & Vulnerabilities
 
-* [🚧Todo](cve-and-vulnerabilities/todo.md)
+* [Windows](cve-and-vulnerabilities/windows.md)
